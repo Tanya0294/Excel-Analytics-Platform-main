@@ -259,7 +259,7 @@ const UploadModal = ({ onClose, onUploadSuccess }) => {
               {selectedFiles.length === 0 ? (
                 <div className="empty-file-list">
                   <div className="empty-icon">📭</div>
-                  <p>No files selected</p>
+                  <p>No files selected yet</p>
                   <small>Files will appear here after selection</small>
                 </div>
               ) : (
