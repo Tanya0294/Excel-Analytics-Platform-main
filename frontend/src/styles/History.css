@@ -1,0 +1,111 @@
+/* Overall container */
+.history-page {
+  padding: 40px 20px;
+  background-color: #f7fafd;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Title with elegant gradient */
+.history-page h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50; /* rich, deep navy blue */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+
+/* Search bar */
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  width: 60%;
+  max-width: 400px;
+  border: 2px solid #d0d0ff;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 255, 0.05);
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #a2b8ff;
+  box-shadow: 0 0 5px #a2b8ff;
+}
+
+/* Table container */
+.history-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.history-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.history-table th,
+.history-table td {
+  padding: 14px 20px;
+  text-align: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.history-table thead {
+  background-color: #eef3ff;
+  color: #333;
+  font-weight: 600;
+}
+
+.history-table tr:hover {
+  background-color: #f9f9ff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.row-count {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: #666;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

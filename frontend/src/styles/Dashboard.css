@@ -1,0 +1,152 @@
+.dashboard-container {
+  padding: 2rem;
+  background-color: #f6f9fc;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50; /* rich, deep navy blue */
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 300px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.upload-card {
+  background-color: #e8f0fe;
+  border: 2px solid #c5dcfc;
+}
+
+.stats-card:nth-child(2) {
+  background-color: #ffe8ec;
+  border: 2px solid #ffcbd4;
+}
+
+.stats-card:nth-child(3) {
+  background-color: #f2e8ff;
+  border: 2px solid #e0caff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card-number {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.search-bar-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.search-bar-container input {
+  width: 400px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.files-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.files-table th {
+  background-color: #e8f0fe;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.files-table td {
+  padding: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s ease;
+}
+
+.files-table tr:hover td:not(:last-child) {
+  background-color: #f9fbff;
+  cursor: pointer;
+}
+
+.files-table td button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.files-table td button:hover {
+  transform: scale(1.05);
+}
+
+.files-table .analyze-btn {
+  background-color: #d0e8ff;
+  color: #005c99;
+}
+
+.files-table .delete-btn {
+  background-color: #ffd9d9;
+  color: #8b0000;
+}
