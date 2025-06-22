@@ -129,7 +129,7 @@ const Login = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
           >
-            Don't have an account? <a href="/register">Register</a>
+            You Don't have an account? <a href="/register">Register</a>
           </motion.p>
         </form>
       </motion.div>
