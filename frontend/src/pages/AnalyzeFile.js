@@ -29,7 +29,7 @@ function AnalyzePage() {
 
   return (
     <div className="analyze-container">
-      <h2>📄 File Preview</h2>
+      <h2>📄 Files Preview</h2>
       {fileData.length > 0 ? (
         <div className="table-container">
           <table className="excel-table">
