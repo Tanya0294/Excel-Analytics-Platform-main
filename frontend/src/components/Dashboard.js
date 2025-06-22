@@ -127,7 +127,7 @@ function Dashboard() {
           >
             <div className="card-icon">📁</div>
             <p className="card-title">Upload Excel File</p>
-            <p className="card-desc">Import new data for analysis</p>
+            <p className="card-desc">Import the new data for analysis</p>
             <div className="card-hover-effect"></div>
           </div>
 
